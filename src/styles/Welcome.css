@@ -1,0 +1,64 @@
+a:link {
+    text-decoration: none;
+  }
+  
+a:visited {
+    text-decoration: none;
+  }
+
+.welcome-left > h1  {
+  margin-top: 8rem;
+  margin-bottom: 1.5rem;
+  font-size: 2.8rem;
+}
+
+.welcome-menu li {
+  margin-left:2.5rem;
+  margin-right:2.5rem;
+  padding: .5rem;
+
+  font-weight:500;
+}
+
+.welcome-menu:nth-child(2) {
+  border-radius: .5rem;
+  color:#fff;
+  background-color: #0492f7;
+}
+
+.welcome-left {
+  justify-self: center;
+}
+
+.btn-cadastrar-1{
+  margin-top:2.5rem;
+  padding-block: .8rem;
+  border-radius: .5rem;
+  background-color: #0492f7;
+  color:#fff;
+  font-family:Helvetica;
+
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  gap: .4rem;
+}
+
+.btn-cadastrar-1:hover {
+  color: #FFF;
+  background-color: #058beb;
+  transition: background-color 1.5s ease;
+}
+
+
+.btn-entrar-left {
+  font-family:'DM Sans';
+  margin-top:2.5rem;
+  line-height: 150%;
+  letter-spacing: 0.008rem;
+}
+
+.wel-graphic img {
+  width: 100%;
+}
+

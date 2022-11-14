@@ -1,25 +1,48 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState} from "react";
+import {Routes, Route} from "react-router-dom";
+import "./styles/App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
-function App() {
+import AuthService from "./services/auth.service";
+import EventBus from "./common/event-bus";
+
+import Register from "./components/register";
+import Welcome from "./components/Welcome";
+import Login from './components/Login';
+
+
+const App = () => {
+
+  const [currentUser, setCurrentUser] = useState(undefined);
+
+  useEffect(() => {
+    const user = AuthService.getCurrentUser();
+
+    if (user){
+      setCurrentUser(user);
+    }
+
+    EventBus.on("logout", () => {
+      logOut();
+    });
+
+
+  }, []);
+
+  const logOut = () => {
+    AuthService.logout();
+    setCurrentUser(undefined);
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+          <Routes>
+            <Route exact path={"/"} element={<Welcome />} />
+            <Route exact path="/register" element={<Register />} />
+            <Route exact path="/login" element={<Login />} />
+          </Routes>
     </div>
-  );
+  )
 }
 
 export default App;

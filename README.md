@@ -1,4 +1,4 @@
-# WADMIN - Uma plataforma fictícia de gerenciamento de criptomoedas
+# WADMIN - Uma plataforma fictícia para gerenciamento de criptomoedas
 
 ### OBS: plataforma em desenvolvimento
 

@@ -9,6 +9,7 @@ import EventBus from "./common/event-bus";
 import Register from "./components/register";
 import Welcome from "./components/Welcome";
 import Login from './components/Login';
+import Profile from './components/Profile';
 
 
 const App = () => {
@@ -40,6 +41,7 @@ const App = () => {
             <Route exact path={"/"} element={<Welcome />} />
             <Route exact path="/register" element={<Register />} />
             <Route exact path="/login" element={<Login />} />
+            <Route exact path="/profile" element={<Profile />} />
           </Routes>
     </div>
   )

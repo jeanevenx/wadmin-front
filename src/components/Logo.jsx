@@ -9,10 +9,10 @@ const Logo = (props) => {
     return (
         <div> 
             <LogoStyle>
-                <a href="/">
+                <a href={props.UrlLogo}>
                     <LogoImg src={logo} alt="Logo" /> 
                 </a>
-                <a href="/">
+                <a href={props.UrlLogo}>
                     <LogoText>WADMIN</LogoText> 
                 </a>
             </LogoStyle>

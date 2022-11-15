@@ -4,13 +4,13 @@ import '../styles/Welcome.css';
 import Logo from './Logo';
 
 
-const Navbar = () => {
+const Navbar = (props) => {
 
 
     return (
         <div>
             <NavbarStyle>  
-                <Logo />
+                <Logo UrlLogo={props.UrlLogo}/>
             </NavbarStyle>
         </div>
     )

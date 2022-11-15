@@ -75,7 +75,7 @@ const Login = () => {
 
     return (
         <Container>
-            <Navbar/>
+            <Navbar UrlLogo="/login"/>
             <Wrapper>
                 <Titulo>Realizar Login</Titulo>
                 <Form onSubmit={handleLogin} ref={form}>

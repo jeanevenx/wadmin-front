@@ -10,11 +10,11 @@ const WelcomeNavbar = () => {
     return (
         <div>
             <NavbarStyle>  
-                <Logo />
+                <Logo UrlLogo="/"/>
                 <MenuWelcome>
-                    <a href="/login" className="welcome-menu"><li>Entrar</li></a>
                     <a href="/register" className="welcome-menu"
                     ><li>Cadastre-se</li></a>
+                    <a href="/login" className="welcome-menu"><li>Entrar</li></a>
                 </MenuWelcome> 
             </NavbarStyle>
         </div>

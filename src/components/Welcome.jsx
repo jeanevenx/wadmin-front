@@ -5,7 +5,7 @@ import graphic1 from '../assets/graphic1.png'
 import '../styles/Welcome.css';
 import { Person } from 'react-bootstrap-icons';
 
-import WelcomeNavbar from './WelcomeNavbar'
+import WelcomeNavbar from './WelcomeNavbar';
 
 
 

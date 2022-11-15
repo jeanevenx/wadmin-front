@@ -111,7 +111,7 @@ const Register = (props) => {
 
     return (
             <Container>
-                <Navbar/>
+                <Navbar UrlLogo="/register"/>
                 <Titulo> Crie Sua Conta</Titulo>
                 <Wrapper>
                     <Form onSubmit={handleRegister} ref={form}>

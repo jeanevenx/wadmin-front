@@ -7,7 +7,7 @@
 
 <br/><br/>  
 
-Projetei e desenvolvi este sistema como projeto final para o curso de desenvolvimento fullstack do Transforma Tec (parceria da DIO com o Grupo Carrefour).
+Projetei e desenvolvi esse sistema como projeto final para o curso de desenvolvimento fullstack do Transforma Tec (parceria da DIO com o Grupo Carrefour).
 <br/><br/>
 <p>PAGINA DE INICIO</p>
 <img src="./snapshots/welcome-snapshot.png">
